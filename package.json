@@ -4,8 +4,10 @@
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
+		"start": "node dist/index.js",
+		"dev": "nodemon src/index.ts",
+		"build": "tsc -p ."
+		},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Kristall01/messenger_backend.git"
@@ -15,5 +17,12 @@
 	"bugs": {
 		"url": "https://github.com/Kristall01/messenger_backend/issues"
 	},
-	"homepage": "https://github.com/Kristall01/messenger_backend#readme"
+	"homepage": "https://github.com/Kristall01/messenger_backend#readme",
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"@types/node": "^17.0.14",
+		"nodemon": "^2.0.15",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.5"
+	}
 }
